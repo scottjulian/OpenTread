@@ -1,0 +1,24 @@
+# Arduino / arduino-cli build output
+build/
+builds/
+*.elf
+*.map
+
+# Release binaries are published on GitHub Releases, not committed
+dist/
+*.bin
+
+# Python (tools)
+.venv
+__pycache__/
+*.pyc
+
+# Captured treadmill sessions (personal data; attach to issues instead)
+logs/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+

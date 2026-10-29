@@ -1,0 +1,11 @@
+case=S2_nudges_264_272
+source=firmware/opentread/test/data/2026-10-18_1329_S2_walk.csv
+params=STOP_US=2500000 WARMUP_US=5000000 AUTO_END_US=900000000 SUMMARY_US=120000000 SPAN_US=3000000
+inputs=6 0
+w=264392176 IDLE WARMUP bout_start
+w=268660674 WARMUP IDLE warmup_fail
+w=269395258 IDLE WARMUP bout_start
+w=273648699 WARMUP IDLE warmup_fail
+workouts=0
+warmup_fails=2
+pauses=0

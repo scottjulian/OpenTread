@@ -1,0 +1,15 @@
+truth_m=255.687200
+continuous_err_m=-1.171324
+phase0_err_m=-0.414200
+phase1_err_m=-1.098200
+phase2_err_m=-1.540200
+phase3_err_m=-2.260200
+phase4_err_m=-1.750200
+phase5_err_m=-0.625200
+phase6_err_m=-1.071200
+phase7_err_m=-1.847200
+phase8_err_m=-1.569200
+phase9_err_m=-1.089200
+phase_min_err_m=-2.260200
+phase_max_err_m=-0.414200
+phase_mean_err_m=-1.326500

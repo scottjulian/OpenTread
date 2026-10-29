@@ -1,0 +1,2 @@
+median_ratio=1.148412
+samples=124

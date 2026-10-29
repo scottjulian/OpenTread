@@ -1,0 +1,32 @@
+# capture_m4.py host_start=2026-10-18T13:20:09-06:00 port=/dev/cu.usbserial-110 baud=115200 session=S1_handturn m_per_pulse=0.62
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4876
+ho 0 tail 12 room 4
+load:0x40078000,len:16532
+load:0x40080400,len:3500
+entry 0x400805b4
+
+S,13698,M4 pulse logger v1 pin=27 lockout_us=20000 release_us=5000 baud=115200 line_level=1 ring=2048 marker_pin=0 reset_reason=1
+S,13698,format: E;t;level P;t;n;dt_us F;t;hex M;t;n S;t;text H;t;pulses;edges;drop_e;ftms;drop_f;conn;level
+S,264547,scan start (boot) for 'AssaultRunner*' - press CONNECT on the console
+H,5267337,0,0,0,0,0,0,1
+H,10267336,0,0,0,0,0,0,1
+H,15267336,0,0,0,0,0,0,1
+H,20267336,0,0,0,0,0,0,1
+H,25267336,0,0,0,0,0,0,1
+H,30267339,0,0,0,0,0,0,1
+S,30268344,scan start (rescan) for 'AssaultRunner*' - press CONNECT on the console
+H,35267336,0,0,0,0,0,0,1
+H,40267336,0,0,0,0,0,0,1
+H,45267336,0,0,0,0,0,0,1
+H,50267336,0,0,0,0,0,0,1
+H,55267336,0,0,0,0,0,0,1
+H,60267336,0,0,0,0,0,0,1
+S,60274338,scan start (rescan) for 'AssaultRunner*' - press CONNECT on the console
+H,65267336,0,0,0,0,0,0,1
+H,70267336,0,0,0,0,0,0,1

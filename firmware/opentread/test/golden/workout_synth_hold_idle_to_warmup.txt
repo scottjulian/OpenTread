@@ -1,0 +1,13 @@
+case=synth_hold_idle_to_warmup
+source=synthetic
+params=STOP_US=2500000 WARMUP_US=5000000 AUTO_END_US=900000000 SUMMARY_US=120000000 SPAN_US=3000000
+inputs=38 2
+w=1500000 IDLE WARMUP bout_start
+w=6500000 WARMUP RUNNING warmup_ok
+w=22500000 RUNNING PAUSED pause
+w=920000000 PAUSED SUMMARY autoend
+z=920000000 autoend 27 14499832 913500000 1195 1112 1
+w=1040000000 SUMMARY IDLE summary_timeout
+workouts=1
+warmup_fails=0
+pauses=1
