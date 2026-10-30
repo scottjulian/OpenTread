@@ -29,7 +29,8 @@ tools/
 ├── replay.py              offline checks of a captured log against the reference model
 ├── ble_check.py           connect from a computer and check the BLE services
 ├── touch_cal.py           touch calibration from a bring-up log
-└── pulse_gen/             sketch for a second ESP32 that emulates the reed sensor
+├── pulse_gen/             sketch for a second ESP32 that emulates the reed sensor
+└── render_screens/        renders the real screens to PNG on a desktop (docs/img/)
 ```
 
 Rule of thumb: logic goes in `src/core/` (testable on the host); `hw_*` files
@@ -102,6 +103,20 @@ Flash a build folder with:
 arduino-cli upload -p <port> --fqbn esp32:esp32:esp32:UploadSpeed=115200 \
   --input-dir firmware/opentread/builds/<folder>
 ```
+
+## Screenshots
+
+```bash
+tools/render_screens/render.sh            # writes docs/img/screen_*.png (2x scale)
+```
+
+This compiles the real renderer (`hw_display.cpp`, unchanged) with LovyanGFX on the
+desktop. The panel is a 320×240 sprite instead of the SPI display, and the
+test/emu stubs supply the clock. It feeds the renderer sample frames the way
+`app.cpp` does, then saves the panel as PNG. The scenes and their numbers are in
+`tools/render_screens/main.cpp`. It needs clang, zlib and the same LovyanGFX
+1.2.26 (`LGFX_DIR` overrides where it's found), but no SDL. Re-run it after any UI
+change and commit the images.
 
 ## Releasing
 

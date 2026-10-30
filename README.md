@@ -8,6 +8,10 @@ and as an **FTMS treadmill** (for apps). Your watch records a native treadmill r
 with real belt speed and distance, then syncs it to Garmin Connect, Strava, or any
 other service your watch uses.
 
+| ![Running: pace 10:00 /mi, 6.0 mph, 1.84 mi](docs/img/screen_running.png) | ![Hold to stop: the ring fills over 2 s](docs/img/screen_hold_to_stop.png) | ![Summary: 2.05 mi, avg 10:00 /mi](docs/img/screen_summary.png) |
+|:-:|:-:|:-:|
+| Running | Hold to stop | Summary |
+
 ## Why
 
 The AssaultRunner was sold with the promise of a companion app for recording

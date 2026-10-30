@@ -46,6 +46,10 @@ points below are the ones that matter for safety and day-to-day reliability.
 
 ## 3. Daily use
 
+| ![Running](img/screen_running.png) | ![Hold to stop](img/screen_hold_to_stop.png) | ![Summary](img/screen_summary.png) |
+|:-:|:-:|:-:|
+| Running | Hold to stop | Summary |
+
 - **Start:** just start moving. After **5 s** of continuous movement the
   workout starts (WARM-UP, then ▶ moving). Those first seconds aren't counted.
 - **Screen:**
