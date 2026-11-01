@@ -57,6 +57,7 @@ If you try it on something new, please open an issue and tell us how it went.
 | Two short wires, and the CN1 cable that comes with the CYD | Connect the treadmill's sensor line to the CYD |
 | 5 V USB wall adapter (≥ 1 A) and a USB cable | Powers the CYD |
 | Soldering iron, multimeter | For the tap and to check the wiring |
+| 3D-printed case, heat-set inserts and screws (optional) | Mounts the CYD where the stock console was; see [3D-printed case](#3d-printed-case) |
 
 You don't need to buy anything from Assault Fitness, and the stock console can
 stay connected.
@@ -87,6 +88,30 @@ pull-up. If the CYD's internal pull-up isn't enough (this hasn't been tested yet
 add a 10 kΩ resistor from GPIO 27 to 3.3 V on the CYD side.
 
 Power the CYD from the USB wall adapter, and keep the cable clear of the belt.
+
+### 3D-printed case
+
+[`hardware/opentread-cyd-case.stl`](hardware/opentread-cyd-case.stl) is a case for
+the CYD, with the case and its front bezel side by side on one plate. It's sized for
+the ESP32-2432S028R "Cheap Yellow Display" with two USB ports (USB-C and
+micro-USB), and it mounts where the stock
+console was, on the same mount holes with the stock console's own M5 screws, so
+there's nothing to drill.
+
+![OpenTread in its case on the AssaultRunner Pro, mid-run](docs/img/case_mounted.jpg)
+
+| Part | Where it goes |
+|---|---|
+| 4 × M4 heat-set inserts | The four corners of the case |
+| 4 × M4 screws, 4 to 8 mm long | Through the bezel into those inserts |
+| 2 × M5 heat-set inserts | The bottom of the case. The stock console's M5 screws go up through the treadmill's console mount and into them. |
+
+The sensor wires leave through the hole in the side of the case and go into the
+console mount, and the USB ports stay reachable through the openings in the case.
+
+| ![The sensor wires running from the case into the console mount](docs/img/case_sensor_wire.jpg) | ![The case from below: the USB openings and the stock M5 screws](docs/img/case_ports_and_mount.jpg) |
+|:-:|:-:|
+| Sensor wires into the console mount | USB openings and the stock M5 screws |
 
 ## Install the firmware
 
